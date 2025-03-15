@@ -19,3 +19,9 @@ jobs:
               run: npm run mocha-test
             - name: test3 of the application
               run: npm run express-test
+    print-job-completion:
+      runs-on: ubuntu-20.04
+      steps:
+        - name: Print message
+          run: echo "Hello User ! \n Job is successfully completed"
+
