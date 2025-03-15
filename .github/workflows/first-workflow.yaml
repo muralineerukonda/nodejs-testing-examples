@@ -15,9 +15,10 @@ jobs:
               run: npm install
             - name: test the application
               run: npm run basic-test
-            - name: test3 of the application
-              run: npm run express-test
+            - name: sleep
+              run: sleep 10
     print-job-completion:
+      needs: build-an-app
       runs-on: ubuntu-latest
       steps:
         - name: Print message
