@@ -1,0 +1,21 @@
+name: build-project
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build-an-app:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get the project code
+              uses: actions/checkout@v4
+            - name: file path
+              run: ls -ltr
+            - name: install the application
+              run: npm install
+            - name: test the application
+              run: npm run basic-test
+            - name: test2 of the application
+              run: npm run mocha-test
+            - name: test3 of the application
+              run: npm run express-test
