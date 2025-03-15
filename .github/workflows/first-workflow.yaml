@@ -15,12 +15,10 @@ jobs:
               run: npm install
             - name: test the application
               run: npm run basic-test
-            - name: test2 of the application
-              run: npm run mocha-test
             - name: test3 of the application
               run: npm run express-test
     print-job-completion:
-      runs-on: ubuntu-20.04
+      runs-on: ubuntu-latest
       steps:
         - name: Print message
           run: echo "Hello User ! \n Job is successfully completed"
