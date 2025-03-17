@@ -18,7 +18,7 @@ jobs:
             - name: test the application
               run: npm run basic-test
             - name: sleep
-              run: sleep 10
+              run: sleep 5
     print-job-completion:
       needs: build-an-app
       runs-on: ubuntu-latest
